@@ -1,0 +1,89 @@
+/*boutton menu: ligne 71*/
+
+
+
+/*_________________________________
+Boutton accueil
+___________________________________*/
+
+/*boutton explorer*/
+@mixin Commander{
+    .boutons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20%;
+        
+    }
+    button.Commander{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vmax;
+        min-width: 50%;
+        padding: 16px;   
+        background: $background_explorer_mobile;
+        border: none;
+        border-radius: $border-radius;
+        color: $link_visited;
+        cursor: pointer;
+    
+    &:hover{
+        background: lighten($color: #30103a, $amount: 50);
+        box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+}
+   
+
+
+/*boutton nouveau */
+@mixin nouveau1{
+    .Nouveau{
+    min-height: 30px;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 10px;
+    padding: 0px 5px 0px 5px;
+    background-color:$tertiary_color;
+    cursor: pointer;
+    border:none;
+    color: rgb(38, 90, 42);
+    font-weight: bold;
+    font-size: 4vmin;  
+    }      
+             
+}
+
+
+/*boutton explorer*/
+@mixin explorer{    
+    width: 60%;
+    font-size: 4vmin;
+    border: none;
+    background: $background_explorer_mobile;
+    border-radius: $border-radius;
+    padding:  10px 10px 10px 10px;
+    margin: 0rem  0rem  5rem 0rem;   
+    color: $link_visited;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    @media screen and (max-width:100px){
+        width: 100%;
+    } 
+    @media screen and (min-width:1000px){
+        font-size: 1.5vmax;
+    }
+    &:hover{
+    background: lighten($color: #30103a, $amount: 50);
+    box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+
+
+/*_________________________________
+Bouttons menus
+___________________________________*/
+
+}
+    
