@@ -365,14 +365,14 @@ body .logo a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   body .logo a {
     font-size: 5vmax;
     height: 10vmax;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   body .logo a {
     height: 10vmax;
   }
