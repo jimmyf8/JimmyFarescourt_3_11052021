@@ -481,7 +481,7 @@ main.accueil{
             }
             .fa-heart::before {
                 content: "\f004";
-                transition: color 2s ease-out;
+                transition: color 1s ease-out;
             }
             .fa-heart:hover::before{
                 color: #9356DC ;
@@ -547,9 +547,12 @@ header{
             width: 74rem;
         }
         @media screen and (min-width:1283px){
-            width: 90vmax;
+            width: 80vmax;
             display: flex;
             flex-direction: row;
+        }
+        @media screen and (min-width:1463px){
+            width: 91vmax;
         }
     }
     /*-------------------------------------------------------------------------titre des menus*/
@@ -599,19 +602,26 @@ header{
         @media (min-width: 820px) and (max-width: 1194px){
             width: 60vmax;
         }
+        
         @media (min-width: 1195px) and (max-width: 1283px){
-            width: 80vmax;
+            width:60vmax;
         }
         @media screen and (min-width:1284px){
-            width: 28vmax;
+            width: 24.5vmax;
+        }
+        @media screen and (min-width:1463px){
+            width: 27.5vmax;
         }
         @media screen and (min-width:2560px){
             margin: 1vmax;
+            
         }
     }
     .nom_plat{
         width: 80%;
-  
+        @media screen and (min-width:2560px){
+            padding: 1.5vmax;
+        }
     }
     /*--------------------------------------------------au survol*/
     .container_menu:hover .check {
@@ -629,8 +639,8 @@ header{
         }
     }
     .container_menu:hover .fa-check-circle {
-    transform: rotate(360deg) ;
-    transition: transform 600ms ease-in-out;      
+        transform: rotate(360deg) ;
+        transition: transform 600ms ease-in-out;      
     }
     /*-------------------------------------------------------prix*/
     .prix{
@@ -657,7 +667,7 @@ header{
         }
         
         @media screen and (min-width:1027px){
-            font-size:1.3vmax;
+            font-size:1.2vmax;
         }
     }
     .container_menu:hover .prix {
@@ -685,18 +695,13 @@ header{
         @media screen and (min-width:758px){
             transform: translate(-10vmax);
         }
-        @media screen and (min-width:768px){
-            transform: translate(-10vmax);
-        }
         @media screen and (min-width:800px){
             font-size:1.9vmax;
         }
         @media screen and (min-width:1027px){
-            font-size:1.3vmax;
+            font-size:1.2vmax;
         }
-        @media screen and (min-width:1440px){
-            font-size: 1.2vmax;
-        }
+       
     }
     p {
         font-size: 3vmin;
@@ -736,11 +741,11 @@ header{
     
         @media screen and (min-width:1283px){
             min-width: 22rem;
-            font-size: 1.5vmin;
+            font-size: 1vmax;
         }
         @media screen and (min-width:1440px){
             min-width: 22rem;
-            font-size: 1.1vmax;
+
         }
     }
     .container_menu:hover h4.menu {
@@ -751,7 +756,7 @@ header{
             @include ellipsis;
         }
         @media screen and (min-width:1283px){
-            min-width: 15vmax;
+            min-width: 8vmax;
             @include ellipsis;
         }
     }
@@ -767,7 +772,9 @@ header{
         }
         @media  screen and (min-width:1440px) {
             width: 20%;
-            
+        }
+        @media screen and (min-width:2560px){
+            padding: 1.5vmax;
         }
     }
 
@@ -792,7 +799,7 @@ header{
             font-size: 1.9vmax;
         }
         @media screen and (min-width:1283px){
-            font-size: 1.0vmax;
+            font-size: 0.8vmax;
         }
         @media screen and (min-width:1440px){
             font-size: 1.2vmax;
@@ -810,18 +817,16 @@ header{
             width: 40vmin;
             @include ellipsis;
         }
-        @media screen and (min-width:1288px){
-            width: 15vmax;
-            font-size: 1.2vmax;
+        @media screen and (min-width:1283px){
+            width: 10vmin;
             @include ellipsis;
         }
         @media screen and (min-width:1317px){
-            width: 15vmax;
-            font-size: 1.2vmax;
+            width: 10vmin;
+            font-size:0.8vmax;
             @include ellipsis;
         }
         @media screen and (min-width:1440px){
-            width: 15vmax;
             font-size: 1.2vmax;
             @include ellipsis;
         }

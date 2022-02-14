@@ -1333,8 +1333,8 @@ main.accueil .cards div.card .fa-heart {
 
 main.accueil .cards div.card .fa-heart::before {
   content: "\f004";
-  -webkit-transition: color 2s ease-out;
-  transition: color 2s ease-out;
+  -webkit-transition: color 1s ease-out;
+  transition: color 1s ease-out;
 }
 
 main.accueil .cards div.card .fa-heart:hover::before {
@@ -1467,7 +1467,7 @@ header div.image img {
 
 @media screen and (min-width: 1283px) {
   .main .position_menus {
-    width: 90vmax;
+    width: 80vmax;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1475,6 +1475,12 @@ header div.image img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1463px) {
+  .main .position_menus {
+    width: 91vmax;
   }
 }
 
@@ -1593,13 +1599,19 @@ header div.image img {
 
 @media (min-width: 1195px) and (max-width: 1283px) {
   .main .container_menu {
-    width: 80vmax;
+    width: 60vmax;
   }
 }
 
 @media screen and (min-width: 1284px) {
   .main .container_menu {
-    width: 28vmax;
+    width: 24.5vmax;
+  }
+}
+
+@media screen and (min-width: 1463px) {
+  .main .container_menu {
+    width: 27.5vmax;
   }
 }
 
@@ -1611,6 +1623,12 @@ header div.image img {
 
 .main .nom_plat {
   width: 80%;
+}
+
+@media screen and (min-width: 2560px) {
+  .main .nom_plat {
+    padding: 1.5vmax;
+  }
 }
 
 .main .container_menu:hover .check {
@@ -1687,7 +1705,7 @@ header div.image img {
 
 @media screen and (min-width: 1027px) {
   .main .prix {
-    font-size: 1.3vmax;
+    font-size: 1.2vmax;
   }
 }
 
@@ -1746,13 +1764,6 @@ header div.image img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .main .container_menu:hover .prix {
-    -webkit-transform: translate(-10vmax);
-            transform: translate(-10vmax);
-  }
-}
-
 @media screen and (min-width: 800px) {
   .main .container_menu:hover .prix {
     font-size: 1.9vmax;
@@ -1760,12 +1771,6 @@ header div.image img {
 }
 
 @media screen and (min-width: 1027px) {
-  .main .container_menu:hover .prix {
-    font-size: 1.3vmax;
-  }
-}
-
-@media screen and (min-width: 1440px) {
   .main .container_menu:hover .prix {
     font-size: 1.2vmax;
   }
@@ -1829,14 +1834,13 @@ header div.image img {
 @media screen and (min-width: 1283px) {
   .main h4.menu {
     min-width: 22rem;
-    font-size: 1.5vmin;
+    font-size: 1vmax;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .main h4.menu {
     min-width: 22rem;
-    font-size: 1.1vmax;
   }
 }
 
@@ -1856,7 +1860,7 @@ header div.image img {
 
 @media screen and (min-width: 1283px) {
   .main .container_menu:hover h4.menu {
-    min-width: 15vmax;
+    min-width: 8vmax;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -1886,6 +1890,12 @@ header div.image img {
 @media screen and (min-width: 1440px) {
   .main .description_prix {
     width: 20%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .main .description_prix {
+    padding: 1.5vmax;
   }
 }
 
@@ -1925,7 +1935,7 @@ header div.image img {
 
 @media screen and (min-width: 1283px) {
   .main .overflow-ellipsis {
-    font-size: 1.0vmax;
+    font-size: 0.8vmax;
   }
 }
 
@@ -1958,10 +1968,9 @@ header div.image img {
   }
 }
 
-@media screen and (min-width: 1288px) {
+@media screen and (min-width: 1283px) {
   .main .container_menu:hover .overflow-ellipsis {
-    width: 15vmax;
-    font-size: 1.2vmax;
+    width: 10vmin;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -1969,8 +1978,8 @@ header div.image img {
 
 @media screen and (min-width: 1317px) {
   .main .container_menu:hover .overflow-ellipsis {
-    width: 15vmax;
-    font-size: 1.2vmax;
+    width: 10vmin;
+    font-size: 0.8vmax;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -1978,7 +1987,6 @@ header div.image img {
 
 @media screen and (min-width: 1440px) {
   .main .container_menu:hover .overflow-ellipsis {
-    width: 15vmax;
     font-size: 1.2vmax;
     text-overflow: ellipsis;
     white-space: nowrap;
