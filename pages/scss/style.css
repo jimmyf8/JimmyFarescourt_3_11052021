@@ -554,6 +554,12 @@ body .logo img {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .recherche-filtres .container1 {
+    height: 50vmax;
+  }
+}
+
 .recherche-filtres .container1 h2.h1_index {
   width: 95%;
   font-size: 8vmin;
@@ -669,10 +675,11 @@ body .logo img {
 
 @media screen and (min-width: 1000px) {
   .recherche-filtres .container2 {
-    padding-bottom: 10px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    height: 50vmax;
+    margin-top: 0%;
   }
 }
 
@@ -724,14 +731,13 @@ body .logo img {
 
 @media screen and (min-width: 1000px) {
   .recherche-filtres .container2 .fx {
-    font-size: 2vmax;
+    font-size: 4vmax;
+    margin-top: 10%;
   }
 }
 
 @media screen and (min-width: 3000px) {
   .recherche-filtres .container2 .fx {
-    font-size: 2vmax;
-    margin-top: 0rem;
     margin-bottom: 5vmax;
   }
 }
@@ -851,9 +857,9 @@ body .logo img {
 
 @media screen and (min-width: 1235px) {
   .recherche-filtres .container2 .filtres ul li div .icone {
-    font-size: 3vmax;
+    font-size: 2.5vmax;
     height: 100%;
-    width: 2.5vmax;
+    width: 3vmax;
   }
 }
 
@@ -1164,8 +1170,8 @@ main.accueil .cards div.card {
   border-radius: 22px;
   margin-bottom: 5%;
   /*---------------------------------------------------------------------------------image carte*/
-  /*block description*/
-  /*lieu*/
+  /*--------------------------------------------------------block description*/
+  /*-------------------------------------------------------lieu*/
   /* -----------------------------------------------------------------titre restaurant*/
   /*------------------------------------------------------------------------------icône coeur*/
 }
@@ -1179,7 +1185,7 @@ main.accueil .cards div.card {
 @media screen and (min-width: 768px) {
   main.accueil .cards div.card {
     margin: 10px;
-    height: 900px;
+    height: 50vmax;
   }
 }
 
@@ -1283,6 +1289,18 @@ main.accueil .cards div.card p {
 @media screen and (min-width: 768px) {
   main.accueil .cards div.card p {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main.accueil .cards div.card p {
+    font-size: 1.5vmax;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  main.accueil .cards div.card p {
+    font-size: 2vmax;
   }
 }
 
@@ -2114,16 +2132,9 @@ li h4 {
   margin: 2px;
 }
 
-@media screen and (max-width: 320px) {
-  li h4 {
-    font-size: 1vmax;
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 374px) {
   li h4 {
-    font-size: 1vmax;
+    font-size: 3vmax;
     width: 100vmin;
   }
 }
@@ -2166,6 +2177,13 @@ li #i_footer {
 li #logo_footer {
   font-family: "Shrikhand";
   font-size: 2vmax;
+}
+
+@media screen and (max-width: 374px) {
+  li #logo_footer {
+    font-size: 3vmax;
+    width: 100vmin;
+  }
 }
 
 @media screen and (min-width: 375px) {

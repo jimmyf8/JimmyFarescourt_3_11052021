@@ -129,6 +129,10 @@ body{
         flex: 2;
 
     }
+    @media screen and (min-width:1440px){
+        height: 50vmax;
+
+    }
 
     /*--------------------------------------------- titre réservez le menu...*/
     @include réservez;
@@ -150,8 +154,10 @@ body{
         width: 100%;
     } 
     @media screen and (min-width:1000px){
-        padding-bottom: 10px;
         flex: 1; 
+        height: 50vmax;
+        margin-top: 0%;
+
     }
     /*//////////////////////////////////////////////////////////////////////////fonctionnement*///////////////////////////////////////////
     @include fonctionnement;
@@ -212,9 +218,9 @@ body{
                         height: 4vmin;
                     }  
                     @media screen and (min-width:1235px){
-                        font-size: 3vmax;
+                        font-size: 2.5vmax;
                         height: 100%;
-                        width: 2.5vmax;
+                        width: 3vmax;
                     }  
                     @media screen and (min-width:2500px){
                         margin-left: -6rem;
@@ -375,7 +381,7 @@ main.accueil{
             } 
             @media screen and (min-width:768px) {
                 margin:10px;   
-                height: 900px;
+                height: 50vmax;
             }
             @media screen and (min-width:2500px) {
                 width: 4000px;
@@ -411,7 +417,7 @@ main.accueil{
                     min-height: 1000px; 
                 } 
             }
-            /*block description*/
+            /*--------------------------------------------------------block description*/
             .container{
                 max-height: 150px;
                 display: flex;
@@ -434,7 +440,7 @@ main.accueil{
                     margin-left: 20px;
                 }
             }
-            /*lieu*/
+            /*-------------------------------------------------------lieu*/
             p{
                 margin:  0px 0px 0px 10px;
                 width: 100%;
@@ -444,6 +450,13 @@ main.accueil{
                 @media screen and (min-width:768px) {
                     margin: 0;
                 }
+                @media screen and (min-width:900px) {
+                    font-size: 1.5vmax;
+                }
+                @media screen and (min-width:2560px) {
+                    font-size: 2vmax;
+                }
+
             }
             a{
                 text-decoration: none;
@@ -866,12 +879,10 @@ li{
         font-family: 'Roboto';
         font-weight: 10;
         margin: 2px;
-        @media screen and (max-width:320px){
-            font-size: 1vmax;
-            width: 100%;
-        }
+     
+     
         @media screen and (max-width:374px){
-            font-size: 1vmax;
+            font-size: 3vmax;
             width: 100vmin;
         }
         @media screen and (min-width:375px){
@@ -898,6 +909,10 @@ li{
     #logo_footer{
         font-family:"Shrikhand" ;
         font-size: 2vmax;
+        @media screen and (max-width:374px){
+            font-size: 3vmax;
+            width: 100vmin;
+        }
         @media screen and (min-width:375px){
             font-size: 3vmax;
             width: 100vmin;
