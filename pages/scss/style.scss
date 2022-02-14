@@ -258,6 +258,10 @@ body{
                         width: 15rem; 
                     }
                     @media screen and (min-width:768px) {
+                        width: 44vmax;
+                        font-size: 2vmin;  
+                    }
+                    @media screen and (min-width:999px) {
                         width: 24vmax;
                         font-size: 2vmin;  
                     }
@@ -547,12 +551,15 @@ header{
             width: 74rem;
         }
         @media screen and (min-width:1283px){
-            width: 80vmax;
+            max-width: 80vmax;
             display: flex;
             flex-direction: row;
         }
         @media screen and (min-width:1463px){
             width: 91vmax;
+        }
+        @media screen and (min-width:2500px){
+            min-width: 91vmax;
         }
     }
     /*-------------------------------------------------------------------------titre des menus*/
@@ -566,9 +573,14 @@ header{
         font-size: 4vmin;
         margin-left: 10px;
         @media screen and (min-width:500px){
-        width: 5%;
-        max-width: 5%;
-        border-bottom: solid 2px $tertiary_color;
+            width: 5%;
+            max-width: 5%;
+            border-bottom: solid 2px $tertiary_color;
+        }
+        @media screen and (min-width:2500px){
+            width: 5%;
+            max-width: 5%;
+            border-bottom: solid 0.5vmin $tertiary_color;
         }
     }
     /*--------------------------------------------------les menus*/
@@ -593,27 +605,28 @@ header{
         @media (min-width: 324px) and (max-width: 597px){
             width: 88vmin;
         }
-        @media (min-width: 598px) and (max-width: 626px){
+        @media (min-width: 598px) and (max-width: 650px){
             width: 90vmin;
         }
-        @media (min-width: 627px) and (max-width: 720px){
-            width: 80vmax;
+        @media (min-width: 651px) and (max-width: 720px){
+            width: 78vmax;
         }
         @media (min-width: 820px) and (max-width: 1194px){
-            width: 60vmax;
+            max-width: 85vmax;
         }
         
         @media (min-width: 1195px) and (max-width: 1283px){
-            width:60vmax;
+            width:80vmax;
         }
         @media screen and (min-width:1284px){
-            width: 24.5vmax;
+            max-width: 24.5vmax;
         }
         @media screen and (min-width:1463px){
             width: 27.5vmax;
         }
         @media screen and (min-width:2560px){
             margin: 1vmax;
+            min-width: 27.5vmax;
             
         }
     }
@@ -733,6 +746,7 @@ header{
         }
         @media  screen and (min-width:476px) {
             min-width: 200px;
+            font-size: 2.5vmin;
         }
         @media screen and (min-width:1194px){
             min-width: 22rem;
