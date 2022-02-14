@@ -1,19 +1,16 @@
 /*boutton menu: ligne 71*/
 
+/****************************************************************************************************************************************
+------------------------------------------------------------Boutton accueil----------------------------------------------------------------
+*****************************************************************************************************************************************/
 
-
-/*_________________________________
-Boutton accueil
-___________________________________*/
-
-/*boutton explorer*/
+/*------------------------boutton explorer*/
 @mixin Commander{
     .boutons{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20%;
-        
+        margin-bottom: 20%; 
     }
     button.Commander{
         display: flex;
@@ -27,17 +24,18 @@ ___________________________________*/
         border-radius: $border-radius;
         color: $link_visited;
         cursor: pointer;
-    
-    &:hover{
-        background: lighten($color: #30103a, $amount: 50);
-        box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);
+        &:hover{
+            background: lighten($color: #30103a, $amount: 50);
+            box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);
         }
+        @media screen and (min-width:2560px){
+            width: 50vmax;
+            font-size: 3.5vmax;
+            
+        } 
     }
 }
-   
-
-
-/*boutton nouveau */
+/*---------------------------------------------------------boutton nouveau */
 @mixin nouveau1{
     .Nouveau{
     min-height: 30px;
@@ -52,12 +50,9 @@ ___________________________________*/
     color: rgb(38, 90, 42);
     font-weight: bold;
     font-size: 4vmin;  
-    }      
-             
+    }                  
 }
-
-
-/*boutton explorer*/
+/*-------------------------------------------------------------------------------------------boutton explorer*/
 @mixin explorer{    
     width: 60%;
     font-size: 4vmin;
@@ -68,22 +63,22 @@ ___________________________________*/
     margin: 0rem  0rem  5rem 0rem;   
     color: $link_visited;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    @media screen and (max-width:100px){
-        width: 100%;
+    @media screen and (max-width:150px){
+        width: 80%;
     } 
     @media screen and (min-width:1000px){
         font-size: 1.5vmax;
     }
+    @media screen and (min-width:1000px){
+        font-size: 1.5vmax;
+    }
+    @media screen and (min-width:1000px){
+        margin: 2vmax;
+        padding: 1.5vmax;
+    }
     &:hover{
     background: lighten($color: #30103a, $amount: 50);
     box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);
-    }
-    
-
-
-/*_________________________________
-Bouttons menus
-___________________________________*/
-
+    } 
 }
     

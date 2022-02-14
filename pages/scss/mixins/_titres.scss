@@ -1,55 +1,62 @@
-/*__________________________________
-Titres
-____________________________________/
+/***************************************************************************************************************
+-------------------------------------------------------Titres------------------------------------------------
+****************************************************************************************************************/
 
-/*titre fonctionnement*/
+/*-----------------------------------titre fonctionnement*/
 @mixin fonctionnement{
     .fx{
-    display: flex;
-    justify-content: start;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    margin:10px 10px 70px 10px;
-   
-    height: 0px;
-    font-family:'Roboto';
-    font-size: 8vmin;
-    &:hover{
-    color: rgb(0, 0, 0);
-    }
-    @media screen and (min-width:500px){
-    width: 100%;
-    margin:-10rem -0rem 10rem 2rem;
-    }
-    @media screen and (min-width:768px){
-    width: 100%;
-    margin:-5rem -0rem 15rem 1rem;
-    }
-    @media screen and (min-width:1000px){
-    width: 100%;
-    margin:6.2rem 0rem 10rem 1rem;
-  
-    }
-   
-    
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin:10px 10px 70px 10px;
+        height: 0px;
+        font-family:'Roboto';
+        font-size: 8vmin;
+        &:hover{
+        color: rgb(0, 0, 0);
         }
-   
+        @media screen and(max-width:150px) {
+            font-size: 2vmax;
+        }
+        @media screen and (min-width:500px){
+        width: 100%;
+        margin:-10rem -0rem 10rem 2rem;
+        }
+        @media screen and (min-width:768px){
+        width: 100%;
+        margin:-5rem -0rem 15rem 1rem;
+        }
+        @media screen and (min-width:1000px){
+        width: 100%;
+        margin:6.2rem 0rem 10vmax 1rem;
+        }
+        @media screen and (min-width:1000px){
+            font-size: 2vmax;
+        }
+        @media screen and (min-width:3000px){
+            font-size: 2vmax;
+            margin-top: 0rem;
+            margin-bottom: 5vmax;
+        }
+    } 
 }
-
-/*titre restaurant*/
+/*------------------------------------------nom restaurant*/
 @mixin resto{
     h2.resto{
-    margin:10px 10px 20px 10px;
-    padding-top: 70px;
-    font-size: 8vmin;
-    font-family:'Roboto';
-    @media screen and (min-width:500px){
-    padding: 50px 10px 80px 10px;
-    }
+        margin:10px 10px 20px 10px;
+        padding-top: 70px;
+        font-size: 8vmin;
+        font-family:'Roboto';
+        @media screen and(max-width:150px) {
+            font-size: 2vmax;   
+        }
+        @media screen and (min-width:500px){
+        padding: 50px 10px 80px 10px;
+        }
     }
 }
-
-/*titre menus */
+/*------------------------------------------------titre menus */
 @mixin h3{
     .title{
         width: 90%;
@@ -62,30 +69,27 @@ ____________________________________/
         /*icône coeur*/
         .fa-heart {
             color: rgb(0, 0, 0);
-           
             border-radius: 50%;
             padding:.2em;
         }
         .fa-heart::before {
-            content: "\f004";
-            
+            content: "\f004";    
             transition: color 2s ease-out;
         }
         .fa-heart:hover::before{
-            color: rgb(0, 183, 255);
+            color: #9356DC;
             cursor: pointer;
             font-weight: bold;
         }
         i{  color: black;
             font-size: 6vmin;
         }
-       
-        } 
+    } 
 }
 
-/*titre*/
+/*----------------------------------------slogan réservez*/
 @mixin réservez{
-        h2.h1_index{
+    h2.h1_index{
         width:95%;
         font-size: 8vmin;
         font-family: 'Roboto';
@@ -94,44 +98,49 @@ ____________________________________/
         justify-content: center;
         margin: 0;
         padding-top: 20px;
-    @media screen and (min-width:1000px){
-        
-        font-size: 3vmax;
-    }
-   
+        @media screen and(max-width:150px) {
+            font-size: 2vmax;     
+        }
+        @media screen and (min-width:1000px){
+            font-size: 3vmax;
+        }
     }
 }
-
 /*découvrez des restaurants...*/
 @mixin découvrez{
     h2.h2_index{
-    width: 90%;
-    font-size: 5vmin;
-    font-weight: lighter;
-    font-family: 'Roboto';
-    margin: 25px;
-    @media screen and (min-width:1000px){
-        font-size: 2vmax;
-    }
+        width: 90%;
+        font-size: 5vmin;
+        font-weight: lighter;
+        font-family: 'Roboto';
+        margin: 25px;
+        @media screen and(max-width:150px) {
+            font-size: 2vmax;
+        }
+        @media screen and (max-width:150px){
+            margin: 0px  0px  10px  0px;
+        }
+        @media screen and (min-width:1000px){
+            font-size: 2vmax;
+        }
     }
 }
-
-/*titre carte*/
+/*-------------------------------------------------titre carte*/
 @mixin titre_carte{
     h4{
-    margin: 0px 0px 10px 10px;
-    min-width: 48%;
-    font-size: 4vmax;
-    font-family:'Roboto';
-    font-weight: bold;
-    @media screen and (min-width:771px){
-    min-width: 90%;
-    }
-    @media screen and (min-width:500px) and(max-width:770px){
-    min-width: 10%; 
-    min-width: 85%;
-    display: flex;
-    align-items: center;
-    }
+        margin: 0px 0px 10px 10px;
+        min-width: 48%;
+        font-size: 4vmax;
+        font-family:'Roboto';
+        font-weight: bold;
+        @media screen and (min-width:771px){
+            min-width: 90%;
+        }
+        @media screen and (min-width:500px) and(max-width:770px){
+            min-width: 10%; 
+            min-width: 85%;
+            display: flex;
+            align-items: center;
+        }
     }
 }

@@ -4,11 +4,9 @@
   */
 
 
-/*______________________________________
-loader
-_______________________________________*/
-
-
+/********************************************************************************************************************************
+--------------------------------------------------------loader------------------------------------------------------------------
+*********************************************************************************************************************************/
 @mixin loader {
     .cs-loader {
         position:fixed;
@@ -18,10 +16,8 @@ _______________________________________*/
         width: 100%;
         height: 100%;
         z-index: 1;
-        animation: lol 5s linear forwards;
-       
-    }
-      
+        animation: lol 5s linear forwards;    
+    }   
     .cs-loader-inner {
         transform: translateY(-50%);
         transform: translateX(-20%);
@@ -31,26 +27,23 @@ _______________________________________*/
         color: #FFF;
         padding: 0 100px;
         text-align: center;
-    }
-      
+    }  
     .cs-loader-inner label {
         font-size: 5vmax;
         opacity: 1;
         display:inline-block;
         background: rgb(4, 4, 4);
     }
- /*______________________________________
-  animations
- _______________________________________*/ 
+ /******************************************************************************************************************************************************
+ -------------------------------------------------------------------------------animations---------------------------------------------------------------
+ ********************************************************************************************************************************************************/ 
     
     /*animation lol*/
     @keyframes lol {
-        0% {
-         
+        0% { 
           opacity: 1;
           position: fixed;
         }
-       
         100% {
           opacity: 0;
         
@@ -65,7 +58,6 @@ _______________________________________*/
         -webkit-animation: lol 3s infinite ease-in-out;
         animation: lol 3s infinite ease-in-out;
     }
-    
     .cs-loader-inner label:nth-child(8) {
         -webkit-animation: lol 3s infinite ease-in-out;
         animation: lol 3s infinite ease-in-out;
@@ -80,17 +72,14 @@ _______________________________________*/
         -webkit-animation: lol 3s infinite ease-in-out;
         animation: lol 3s infinite ease-in-out;
     }
-      
     .cs-loader-inner label:nth-child(5) {
         -webkit-animation: lol 3s 100ms infinite ease-in-out;
         animation: lol 3s 100ms infinite ease-in-out;
     }
-      
     .cs-loader-inner label:nth-child(4) {
         -webkit-animation: lol 3s 200ms infinite ease-in-out;
         animation: lol 3s 200ms infinite ease-in-out;
     }
-      
     .cs-loader-inner label:nth-child(3) {
         -webkit-animation: lol 3s 300ms infinite ease-in-out;
         animation: lol 3s 300ms infinite ease-in-out;
@@ -106,8 +95,7 @@ _______________________________________*/
         animation: lol 3s 500ms infinite ease-in-out;
     }
 }
-
-/*animation slidedown*/
+/*---------------------------------------------------------------------------------------------------animation slidedown*/
 @keyframes slidedown {
     from{
         transform:translateY(200px);
@@ -117,45 +105,38 @@ _______________________________________*/
         transform:translateY(0);
         opacity: 1;
     }   
-    
 }
-/*_____________________________________________
-recherche
-______________________________________________*/
+/*****************************************************************************************************************************************************
+-------------------------------------------------------------------recherche--------------------------------------------------------------------------
+******************************************************************************************************************************************************/
 
-/*barre de recherche*/
+/*-----------------------------------------------------------------barre de recherche*/
 @mixin search{
     .form {
-    min-width: 100%;
-    border-width: 3px;
-    display: flex;
-    justify-content: center;
-    min-height: 2rem;
-    @media screen and (min-width:500px) {
-    min-height: 4rem;  
+        min-width: 100%;
+        border-width: 3px;
+        display: flex;
+        justify-content: center;
+        min-height: 2rem;
+        @media screen and (min-width:500px) {
+        min-height: 4rem;  
+        }
     }
-    }
-   
     .form label,.form button{
-    align-items: center;
-    display: flex;
-    width: 100%;
-    cursor: pointer;
-    padding: 5px;
-   
-    }
-       
-    /*icône localistion*/
+        align-items: center;
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+        padding: 5px;
+    }       
+    /*---------------------------------------------------------icône localistion*/
     label {
         height: 8vmax;
-       
         background: rgb(74,74,74);
         background: linear-gradient(180deg, rgb(161, 161, 161) 0%, rgba(223, 223, 223, 0.841) 10%);
         display: flex;
         justify-content: center;
-        
-    
-     }
+    }
     span{
         display: flex;
         align-items: center;
@@ -163,16 +144,13 @@ ______________________________________________*/
         i{
             font-size: 2vmax;
             @media screen and(min-width:476px) {
-                height: 3.5vmax; 
-                
+                height: 3.5vmax;     
             }
         }
     }
     }
-      
-    /* champs de texte*/
+    /*------------------------------------------------- champs de texte*/
     input {
-        
         display: flex;
         align-items: center;
         border: 0;
@@ -181,16 +159,13 @@ ______________________________________________*/
         flex: 1;
         width: 29vmax;
         @media screen and(max-width:321px) {
-            width: 19vmax;
-            
+            width: 19vmax; 
         }
         @media screen and(min-width:2560px) {
-            width: 19vmax;
-            
+            width: 19vmax;  
         }
     }
-       
-    /* Exemple de ville*/
+    /*------------------------------------------------------------------ Exemple de ville*/
     ::placeholder{
     color: rgb(0, 0, 0);
     opacity: 1;
@@ -198,36 +173,38 @@ ______________________________________________*/
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 4vmin;
-    @media screen and(min-width:2560px) {
+    @media screen and(max-width:150px) {
         font-size: 2vmax;
-        
+    }
+    @media screen and(min-width:2560px) {
+        font-size: 2vmax;  
     }
 }
-    
-
-
-/*_______________________________
-footer
-_________________________________*/
+/***************************************************************************************************************************************
+-----------------------------------------------------------------------------footer----------------------------------------------------
+*******************************************************************************************************************************************/
 
 @mixin footer{
    footer{ 
-    background-color: rgb(58, 54, 54);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    list-style: none;
-    i{
-    margin-right: 10px;
-    @media screen and (min-width:500px){
-    margin-right: 20px;    
+        background-color: rgb(58, 54, 54);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+        i{
+            margin-right: 10px;
+            @media screen and (min-width:500px){
+                margin-right: 20px;    
+            }
+        }
+        .footer  p{
+            font-family: 'Shrikland';
+            list-style: none;
+        }
     }
-    }
-    .footer  p{
-    font-family: 'Shrikland';
-    list-style: none;
-    }
-}   }
+}   
+
+
    
 
 

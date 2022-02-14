@@ -1,15 +1,11 @@
-
-
-/*border-top*/
+/*--------------------------------*border-top*/
 %flex-border-top{
  border-top-left-radius: 22px;
  border-top-right-radius:  22px;
 }
-
-
-/*_________________________________
+/**************************************************************************************************************
 Position
-___________________________________/
+****************************************************************************************************************/
 
 /*padding*/
 @mixin padding{
@@ -21,7 +17,35 @@ ___________________________________/
     margin: 10px 10px 10px 10px;
 }
 
-    
+/*centrer verticale et horizontale*/   
+@mixin centre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/*centrer verticale*/
+@mixin verticale{
+    display: flex;
+    align-items: center;
+}
+/*centrer horizontale*/
+@mixin horizontale{
+    display: flex;
+    justify-content: center;
+}
+/*espacer*/
+@mixin espacer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*******************************************************************************************************************************************
+----------------------------------------------------------ellipsis-------------------------------------------------------------------------
+**********************************************************************************************************************************************/
 
+@mixin ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 

@@ -27,10 +27,10 @@ UTILITAIRES POSITION / DIMENSIONS
   footer:ligne 185
   animations: ligne 40
   */
-/*______________________________________
-loader
-_______________________________________*/
-/*animation slidedown*/
+/********************************************************************************************************************************
+--------------------------------------------------------loader------------------------------------------------------------------
+*********************************************************************************************************************************/
+/*---------------------------------------------------------------------------------------------------animation slidedown*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @-webkit-keyframes slidedown {
@@ -58,11 +58,11 @@ _______________________________________*/
   }
 }
 
-/*_____________________________________________
-recherche
-______________________________________________*/
-/*barre de recherche*/
-/* champs de texte*/
+/*****************************************************************************************************************************************************
+-------------------------------------------------------------------recherche--------------------------------------------------------------------------
+******************************************************************************************************************************************************/
+/*-----------------------------------------------------------------barre de recherche*/
+/*------------------------------------------------- champs de texte*/
 input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +91,7 @@ input {
   }
 }
 
-/* Exemple de ville*/
+/*------------------------------------------------------------------ Exemple de ville*/
 ::-webkit-input-placeholder {
   color: black;
   opacity: 1;
@@ -125,6 +125,21 @@ input {
   font-size: 4vmin;
 }
 
+@media screen and (max-width: 150px) {
+  ::-webkit-input-placeholder {
+    font-size: 2vmax;
+  }
+  :-ms-input-placeholder {
+    font-size: 2vmax;
+  }
+  ::-ms-input-placeholder {
+    font-size: 2vmax;
+  }
+  ::placeholder {
+    font-size: 2vmax;
+  }
+}
+
 @media screen and (min-width: 2560px) {
   ::-webkit-input-placeholder {
     font-size: 2vmax;
@@ -140,42 +155,47 @@ input {
   }
 }
 
-/*_______________________________
-footer
-_________________________________*/
-/*border-top*/
-/*_________________________________
+/***************************************************************************************************************************************
+-----------------------------------------------------------------------------footer----------------------------------------------------
+*******************************************************************************************************************************************/
+/*--------------------------------*border-top*/
+/**************************************************************************************************************
 Position
-___________________________________/
-
+****************************************************************************************************************/
 /*padding*/
 /*margin*/
+/*centrer verticale et horizontale*/
+/*centrer verticale*/
+/*centrer horizontale*/
+/*espacer*/
+/*******************************************************************************************************************************************
+----------------------------------------------------------ellipsis-------------------------------------------------------------------------
+**********************************************************************************************************************************************/
 /*boutton menu: ligne 71*/
-/*_________________________________
-Boutton accueil
-___________________________________*/
-/*boutton explorer*/
-/*boutton nouveau */
-/*boutton explorer*/
-/*__________________________________
-Titres
-____________________________________/
-
-/*titre fonctionnement*/
-/*titre restaurant*/
-/*titre menus */
-/*titre*/
+/****************************************************************************************************************************************
+------------------------------------------------------------Boutton accueil----------------------------------------------------------------
+*****************************************************************************************************************************************/
+/*------------------------boutton explorer*/
+/*---------------------------------------------------------boutton nouveau */
+/*-------------------------------------------------------------------------------------------boutton explorer*/
+/***************************************************************************************************************
+-------------------------------------------------------Titres------------------------------------------------
+****************************************************************************************************************/
+/*-----------------------------------titre fonctionnement*/
+/*------------------------------------------nom restaurant*/
+/*------------------------------------------------titre menus */
+/*----------------------------------------slogan réservez*/
 /*découvrez des restaurants...*/
-/*titre carte*/
+/*-------------------------------------------------titre carte*/
 /*police*/
 /**************************************
 HOME, PAGE  2,3,4,5 
 ***************************************/
 body {
   /*-------------------------------------------------loader*/
-  /*______________________________________
-  animations
- _______________________________________*/
+  /******************************************************************************************************************************************************
+ -------------------------------------------------------------------------------animations---------------------------------------------------------------
+ ********************************************************************************************************************************************************/
   /*animation lol*/
   height: 100vh;
   width: 100%;
@@ -298,12 +318,12 @@ body .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   /*------------------------------------------------flèche*/
   /*-----------------------------------------------image logo*/
@@ -322,16 +342,14 @@ body .logo a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 2rem;
   font-size: 2vmax;
   text-decoration: none;
   color: black;
   font-family: "Shrikhand";
-  display: flex;
-  align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (max-width: 280px) {
@@ -341,9 +359,30 @@ body .logo a {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   body .logo a {
     font-size: 1vmax;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .logo a {
+    font-size: 2vmax;
+    height: 7vmax;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .logo a {
+    font-size: 3vmax;
+    height: 10vmax;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body .logo a {
+    height: 20vmax;
+    font-size: 5vmax;
   }
 }
 
@@ -356,7 +395,7 @@ body .logo h3 {
 }
 
 @media screen and (min-width: 500px) {
-  body .logo {
+  body .logo h3 {
     margin: 10%;
   }
 }
@@ -374,14 +413,14 @@ body .logo img {
   }
 }
 
-/**************************************
- HOME
- ***************************************/
+/*********************************************************************************************************************************
+----------------------------------------------------------------------------HOME--------------------------------------------------
+**********************************************************************************************************************************/
 /*-----------------------------------block recherche accueil*/
 .recherche-filtres {
   height: auto;
   /*--------------------------------------------barre de recherche*/
-  /*icône localistion*/
+  /*---------------------------------------------------------icône localistion*/
   /*------------------------------------------------*recherche-slogan-boutton*/
   /*--------------------------------------------block fonctionnement*/
 }
@@ -482,9 +521,10 @@ body .logo img {
   /*---------------------------------------------------boutton explorer*/
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 150px) {
   .recherche-filtres .container1 {
     width: 100%;
+    min-height: 150px;
   }
 }
 
@@ -499,16 +539,16 @@ body .logo img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
@@ -532,6 +572,12 @@ body .logo img {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 150px) {
+  .recherche-filtres .container1 h2.h1_index {
+    font-size: 2vmax;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .recherche-filtres .container1 h2.h1_index {
     font-size: 3vmax;
@@ -544,6 +590,18 @@ body .logo img {
   font-weight: lighter;
   font-family: 'Roboto';
   margin: 25px;
+}
+
+@media screen and (max-width: 150px) {
+  .recherche-filtres .container1 h2.h2_index {
+    font-size: 2vmax;
+  }
+}
+
+@media screen and (max-width: 150px) {
+  .recherche-filtres .container1 h2.h2_index {
+    margin: 0px  0px  10px  0px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -564,20 +622,30 @@ body .logo img {
   color: white;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  /*_________________________________
-Bouttons menus
-___________________________________*/
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 150px) {
   .recherche-filtres .container1 button.explorer {
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .recherche-filtres .container1 button.explorer {
     font-size: 1.5vmax;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .recherche-filtres .container1 button.explorer {
+    font-size: 1.5vmax;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .recherche-filtres .container1 button.explorer {
+    margin: 2vmax;
+    padding: 1.5vmax;
   }
 }
 
@@ -590,7 +658,8 @@ ___________________________________*/
 .recherche-filtres .container2 {
   margin-top: 20%;
   background-color: #ffffff;
-  /*-------------------------------------------fonctionnement*/
+  /*//////////////////////////////////////////////////////////////////////////fonctionnement*/
+  /*------------------------------------------------------------------------------filtres*/
 }
 
 @media screen and (max-width: 100px) {
@@ -605,7 +674,6 @@ ___________________________________*/
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    margin: 5vmin;
   }
 }
 
@@ -628,6 +696,12 @@ ___________________________________*/
   color: black;
 }
 
+@media screen and (max-width: 150px) {
+  .recherche-filtres .container2 .fx {
+    font-size: 2vmax;
+  }
+}
+
 @media screen and (min-width: 500px) {
   .recherche-filtres .container2 .fx {
     width: 100%;
@@ -645,7 +719,21 @@ ___________________________________*/
 @media screen and (min-width: 1000px) {
   .recherche-filtres .container2 .fx {
     width: 100%;
-    margin: 6.2rem 0rem 10rem 1rem;
+    margin: 6.2rem 0rem 10vmax 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .recherche-filtres .container2 .fx {
+    font-size: 2vmax;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .recherche-filtres .container2 .fx {
+    font-size: 2vmax;
+    margin-top: 0rem;
+    margin-bottom: 5vmax;
   }
 }
 
@@ -654,13 +742,13 @@ ___________________________________*/
 }
 
 .recherche-filtres .container2 .filtres ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -679,8 +767,6 @@ ___________________________________*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 90%;
   height: 10vmax;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -701,56 +787,36 @@ ___________________________________*/
   background-color: #f7def7;
 }
 
-@media screen and (max-width: 242px) {
+@media screen and (min-width: 2500px) {
   .recherche-filtres .container2 .filtres ul li {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 266px) {
-  .recherche-filtres .container2 .filtres ul li {
-    width: 245px;
-  }
-}
-
-@media (min-width: 267px) and (max-width: 373px) {
-  .recherche-filtres .container2 .filtres ul li {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 263px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .recherche-filtres .container2 .filtres ul li {
-    width: 97%;
-    height: 5vmax;
-    border-radius: 200px;
+    width: 96%;
   }
 }
 
 .recherche-filtres .container2 .filtres ul li div .icone {
-  color: #ffffff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #9356DC;
-  border-radius: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -1rem;
-  /* Hauteur des icônes*/
-  height: calc(100% + 0.9);
-  /* Centrer les icônes horizontalement*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #ffffff;
+  background-color: #9356DC;
+  border-radius: 22px;
+  margin-left: -1rem;
+  /* Hauteur des icônes*/
+  height: calc(100% + 0.9);
   width: 3vmax;
+}
+
+@media screen and (max-width: 150px) {
+  .recherche-filtres .container2 .filtres ul li div .icone {
+    margin-left: 0.11rem;
+    width: 8%;
+  }
 }
 
 @media screen and (max-width: 241px) {
@@ -767,7 +833,7 @@ ___________________________________*/
 
 @media (min-width: 320px) and (max-width: 424px) {
   .recherche-filtres .container2 .filtres ul li div .icone {
-    margin-left: -0.7rem;
+    margin-left: -3.7rem;
   }
 }
 
@@ -797,7 +863,7 @@ ___________________________________*/
     margin-left: -6rem;
     font-size: 2vmax;
     height: 100%;
-    width: 2vmax;
+    width: 3vmax;
   }
 }
 
@@ -815,12 +881,22 @@ ___________________________________*/
   position: relative;
   font-family: 'Roboto';
   font-weight: bolder;
-  /*icone smartphone...*/
+  /*-------------------------------------------icone smartphone...*/
 }
 
-@media (min-width: 220px) {
+@media (max-width: 150px) {
   .recherche-filtres .container2 .filtres ul li div .filtre {
-    width: 15rem;
+    width: 12rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 200px) {
+  .recherche-filtres .container2 .filtres ul li div .filtre {
+    width: 30vmax;
   }
 }
 
@@ -839,7 +915,7 @@ ___________________________________*/
 
 @media screen and (min-width: 375px) {
   .recherche-filtres .container2 .filtres ul li div .filtre {
-    width: 20.6rem;
+    width: 14.6rem;
   }
 }
 
@@ -867,6 +943,12 @@ ___________________________________*/
   color: #999999;
   font-size: 2vmax;
   margin-right: 2px;
+}
+
+@media screen and (max-width: 150px) {
+  .recherche-filtres .container2 .filtres ul li div .filtre i {
+    margin-left: 0.2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -903,7 +985,7 @@ ___________________________________*/
   color: #9356DC;
 }
 
-.recherche-filtres .container2 .filtres ul li div .filtre p {
+.recherche-filtres .container2 .filtres ul li p {
   text-align: center;
   font-size: 5vmin;
   font-family: 'Roboto';
@@ -921,9 +1003,16 @@ ___________________________________*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*span*/
 }
 
-@media (min-width: 244px) and (max-width: 373px) {
+@media screen and (max-width: 150px) {
+  .recherche-filtres .filtre {
+    width: 3px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 373px) {
   .recherche-filtres .filtre {
     width: 7vmin;
   }
@@ -935,6 +1024,19 @@ ___________________________________*/
   }
 }
 
+.recherche-filtres .filtre span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 150px) {
+  .recherche-filtres .filtre span {
+    font-size: 1.5vmax;
+    width: 20%;
+  }
+}
+
 @media screen and (min-width: 1235px) {
   .recherche-filtres .filtre span {
     font-size: 1.5vmax;
@@ -943,16 +1045,22 @@ ___________________________________*/
 
 @media screen and (min-width: 2500px) {
   .recherche-filtres .filtre span {
-    font-size: 2vmax;
+    font-size: 1.5vmax;
   }
 }
 
-/*---------------------------------------------------restaurant*/
+/*//////////////////////////////////////////////////////////////////////////restaurant*/
 h2.resto {
   margin: 10px 10px 20px 10px;
   padding-top: 70px;
   font-size: 8vmin;
   font-family: 'Roboto';
+}
+
+@media screen and (max-width: 150px) {
+  h2.resto {
+    font-size: 2vmax;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -961,6 +1069,7 @@ h2.resto {
   }
 }
 
+/*group restaurant*/
 .group_restaurant {
   background-color: #f5f1f1;
   margin-top: 15%;
@@ -972,6 +1081,7 @@ h2.resto {
   }
 }
 
+/*accueil*/
 main.accueil {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -979,12 +1089,13 @@ main.accueil {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*----------------------------------------------cartes*/
+  /*----------------------------------------------------------------------cartes*/
 }
 
 main.accueil .cards {
   margin-bottom: 12%;
   background-color: transparent;
+  /*----------------------------------------------------------------------------------carte*/
   /*bouton nouveau*/
 }
 
@@ -999,14 +1110,14 @@ main.accueil .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1019,15 +1130,15 @@ main.accueil .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 500px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1053,11 +1164,11 @@ main.accueil .cards div.card {
   transition: 0.3s;
   border-radius: 22px;
   margin-bottom: 5%;
-  /*image carte*/
+  /*---------------------------------------------------------------------------------image carte*/
   /*block description*/
   /*lieu*/
-  /*restaurant*/
-  /*icône coeur*/
+  /* -----------------------------------------------------------------titre restaurant*/
+  /*------------------------------------------------------------------------------icône coeur*/
 }
 
 @media screen and (max-width: 100px) {
@@ -1077,6 +1188,7 @@ main.accueil .cards div.card {
   main.accueil .cards div.card {
     width: 4000px;
     padding-bottom: 100px;
+    margin: 2vmax;
   }
 }
 
@@ -1228,12 +1340,12 @@ main.accueil .cards .Nouveau {
   font-size: 4vmin;
 }
 
-/**************************************
-  PAGE  2,3,4,5 
- ***************************************/
+/**********************************************************************************************************************************************************************
+-----------------------------------------------------------------------------------------------PAGES 2,3,4,5-----------------------------------------------------------
+************************************************************************************************************************************************************************/
 header {
   background-color: transparent;
-  /*----------------------------------image header*/
+  /*------------------------------------------------image header*/
 }
 
 header div.image img {
@@ -1249,7 +1361,13 @@ header div.image img {
   }
 }
 
-/*-------------------------------------------------main des pages menus*/
+@media screen and (min-width: 2500px) {
+  header div.image img {
+    height: 50vmax;
+  }
+}
+
+/*--------------------------------------------------------------main des pages menus*/
 .main {
   margin-top: -4rem;
   border-top-left-radius: 22px;
@@ -1264,14 +1382,15 @@ header div.image img {
           flex-direction: column;
   width: 100%;
   position: relative;
-  /*--------------------------------------titre des menus*/
-  /*------------------------------titre :entrées, plats, dessert*/
+  /*----------------------------------------------------------------------------Centrer les menus*/
+  /*-------------------------------------------------------------------------titre des menus*/
+  /*-------------------------------------------------------titre :entrées, plats, dessert*/
   /*--------------------------------------------------les menus*/
   /*--------------------------------------------------au survol*/
   /*au survol*/
   /*-------------------------------------------------------prix*/
-  /*----------------------------------------nom entrée plat dessert*/
-  /*--------------------------------détail entrée plat dessert*/
+  /*-----------------------------------------------------------------nom entrée plat dessert*/
+  /*---------------------------------------------détail entrée plat dessert*/
   /*------------------------------------------fond vert animation*/
 }
 
@@ -1280,12 +1399,12 @@ header div.image img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1336,19 +1455,6 @@ header div.image img {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .main .position_menus {
-    width: 100vmax;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 .main .title {
   width: 90%;
   display: -webkit-box;
@@ -1379,7 +1485,7 @@ header div.image img {
 }
 
 .main .title .fa-heart:hover::before {
-  color: #00b7ff;
+  color: #9356DC;
   cursor: pointer;
   font-weight: bold;
 }
@@ -1426,21 +1532,21 @@ header div.image img {
   overflow: hidden;
 }
 
-@media screen and (max-width: 157px) {
+@media (min-width: 150px) and (max-width: 175px) {
   .main .container_menu {
-    width: 7.2rem;
+    width: 17vmax;
   }
 }
 
-@media (min-width: 324px) and (max-width: 323px) {
+@media (min-width: 176px) and (max-width: 190px) {
   .main .container_menu {
-    width: 25vmax;
+    width: 20vmax;
   }
 }
 
-@media (min-width: 324px) and (max-width: 5px) {
+@media (min-width: 324px) and (max-width: 597px) {
   .main .container_menu {
-    width: 90vmin;
+    width: 88vmin;
   }
 }
 
@@ -1471,6 +1577,12 @@ header div.image img {
 @media screen and (min-width: 1284px) {
   .main .container_menu {
     width: 28vmax;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .main .container_menu {
+    margin: 1vmax;
   }
 }
 
@@ -1508,13 +1620,15 @@ header div.image img {
   transition: transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
 }
 
-.main .prix {
-  font-size: 10px;
+@media screen and (max-width: 164px) {
+  .main .prix {
+    font-size: 0.5vmax;
+  }
 }
 
 @media screen and (max-width: 205px) {
   .main .prix {
-    font-size: 1.3vmax;
+    font-size: 0.8vmax;
   }
 }
 
@@ -1542,7 +1656,13 @@ header div.image img {
   }
 }
 
-@media screen and (min-width: 1283px) {
+@media screen and (min-width: 800px) {
+  .main .prix {
+    font-size: 1.9vmax;
+  }
+}
+
+@media screen and (min-width: 1027px) {
   .main .prix {
     font-size: 1.3vmax;
   }
@@ -1553,14 +1673,29 @@ header div.image img {
           transform: translate(-56px);
 }
 
-@media screen and (max-width: 157px) {
+@media screen and (max-width: 121px) {
   .main .container_menu:hover .prix {
+    font-size: 0.1px;
+  }
+}
+
+@media screen and (max-width: 164px) {
+  .main .container_menu:hover .prix {
+    font-size: 0.5vmax;
     -webkit-transform: translate(-50px);
             transform: translate(-50px);
   }
 }
 
-@media (min-width: 157px) and (max-width: 498px) {
+@media screen and (max-width: 205px) {
+  .main .container_menu:hover .prix {
+    font-size: 1.1vmax;
+    -webkit-transform: translate(-3.5rem);
+            transform: translate(-3.5rem);
+  }
+}
+
+@media (min-width: 206px) and (max-width: 498px) {
   .main .container_menu:hover .prix {
     -webkit-transform: translate(-3.5rem);
             transform: translate(-3.5rem);
@@ -1603,7 +1738,7 @@ header div.image img {
 
 @media screen and (min-width: 1027px) {
   .main .container_menu:hover .prix {
-    font-size: 1vmax;
+    font-size: 1.3vmax;
   }
 }
 
@@ -1645,11 +1780,11 @@ header div.image img {
   .main h4.menu {
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 1px;
+    width: 5px;
   }
 }
 
-@media screen and (min-width: 279px) {
+@media screen and (min-width: 280px) {
   .main h4.menu {
     min-width: 200px;
   }
@@ -1688,7 +1823,7 @@ header div.image img {
   width: 3px;
 }
 
-@media screen and (max-width: 157px) {
+@media screen and (max-width: 320px) {
   .main .container_menu:hover h4.menu {
     min-width: 50px;
     text-overflow: ellipsis;
@@ -1731,9 +1866,19 @@ header div.image img {
   }
 }
 
-@media screen and (max-width: 205px) {
+@media screen and (max-width: 120px) {
   .main .overflow-ellipsis {
-    font-size: 1.3vmax;
+    min-width: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main .overflow-ellipsis {
+    min-width: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
@@ -1774,15 +1919,15 @@ header div.image img {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 157px) {
+@media screen and (max-width: 164px) {
   .main .container_menu:hover .overflow-ellipsis {
-    width: 50px;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 10vmin;
   }
 }
 
-@media screen and (min-width: 157px) {
+@media screen and (min-width: 165px) {
   .main .container_menu:hover .overflow-ellipsis {
     width: 40vmin;
     text-overflow: ellipsis;
@@ -1830,13 +1975,13 @@ header div.image img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 1.4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   opacity: 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -1900,9 +2045,16 @@ button.Commander:hover {
           box-shadow: 0 18px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*______________________________________
-footer
-_______________________________________*/
+@media screen and (min-width: 2560px) {
+  button.Commander {
+    width: 50vmax;
+    font-size: 3.5vmax;
+  }
+}
+
+/**************************************************************************************************************************************************
+--------------------------------------------------------------------------------------footer-------------------------------------------------------
+**************************************************************************************************************************************************/
 ul {
   padding-left: 4%;
 }
@@ -1951,51 +2103,50 @@ li a {
   font-size: 2vmax;
 }
 
-li a h4 {
+li h4 {
   font-family: 'Roboto';
   font-weight: 10;
   margin: 2px;
 }
 
 @media screen and (max-width: 320px) {
-  li a h4 {
+  li h4 {
     font-size: 1vmax;
-    width: 70vmin;
   }
 }
 
 @media screen and (min-width: 375px) {
-  li a h4 {
+  li h4 {
     font-size: 3vmax;
     width: 100vmin;
   }
 }
 
 @media screen and (min-width: 952px) {
-  li a h4 {
+  li h4 {
     width: 50vmax;
   }
 }
 
 @media screen and (min-width: 2500px) {
-  li a h4 {
+  li h4 {
     margin-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 5000px) {
-  li a h4 {
+  li h4 {
     margin: 8rem;
   }
 }
 
-li a #i_footer {
+li #i_footer {
   padding-right: 0.6rem;
 }
 
 @media screen and (min-width: 2500px) {
-  li a #i_footer {
-    padding-right: 3rem;
+  li #i_footer {
+    padding-right: 3vmax;
   }
 }
 
