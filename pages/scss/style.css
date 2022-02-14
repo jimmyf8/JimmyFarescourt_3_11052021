@@ -367,14 +367,13 @@ body .logo a {
 
 @media screen and (max-width: 768px) {
   body .logo a {
-    font-size: 2vmax;
-    height: 7vmax;
+    font-size: 5vmax;
+    height: 10vmax;
   }
 }
 
 @media screen and (max-width: 1024px) {
   body .logo a {
-    font-size: 3vmax;
     height: 10vmax;
   }
 }
