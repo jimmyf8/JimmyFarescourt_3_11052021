@@ -436,11 +436,14 @@ main.accueil{
             }
             /*lieu*/
             p{
-                margin: 0px 0px 0px 10px;
+                margin:  0px 0px 0px 10px;
                 width: 100%;
                 font-size: 2vmax;
                 font-family: 'Roboto';
                 font-weight: 500;
+                @media screen and (min-width:768px) {
+                    margin: 0;
+                }
             }
             a{
                 text-decoration: none;
@@ -865,6 +868,11 @@ li{
         margin: 2px;
         @media screen and (max-width:320px){
             font-size: 1vmax;
+            width: 100%;
+        }
+        @media screen and (max-width:374px){
+            font-size: 1vmax;
+            width: 100vmin;
         }
         @media screen and (min-width:375px){
             font-size: 3vmax;

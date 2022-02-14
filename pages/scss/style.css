@@ -1280,6 +1280,12 @@ main.accueil .cards div.card p {
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  main.accueil .cards div.card p {
+    margin: 0;
+  }
+}
+
 main.accueil .cards div.card a {
   text-decoration: none;
   color: black;
@@ -2111,6 +2117,14 @@ li h4 {
 @media screen and (max-width: 320px) {
   li h4 {
     font-size: 1vmax;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  li h4 {
+    font-size: 1vmax;
+    width: 100vmin;
   }
 }
 
