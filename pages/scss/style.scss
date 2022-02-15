@@ -22,9 +22,7 @@ body{
     @include loader;
     height: 100vh;
     width: 100%;
-    @media screen and (max-width:100px){
-        width: 150px;
-    } 
+
     
    
     /*-------------------------------------------------logo*/
@@ -45,7 +43,7 @@ body{
             color: black;
             font-family: "Shrikhand"; 
             @media screen and (max-width:280px){
-                width: 100%;
+           
                 font-size: 1vmax;
             } 
             @media screen and (min-width:320px){
@@ -57,12 +55,12 @@ body{
                 height: 10vmax;
             } 
             @media screen and (min-width:1024px){
-                
+                font-size: 2vmax;
                 height: 10vmax;
             } 
             @media screen and (min-width:2560px){
                 height: 20vmax;
-                font-size: 5vmax;
+                font-size: 4vmax;
                 
             } 
         }    
@@ -168,6 +166,7 @@ body{
             @include horizontale;
             padding-left:0px;
             flex-direction: column;
+            
             li{ 
                 animation: slideDown 5s;
                 @include centre; 
@@ -183,114 +182,66 @@ body{
                 &:hover{
                 box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);
                 background-color: rgb(247, 222, 247);
+                display: flex;
+                align-items: center;
+
+                
                 }
-                @media screen and (min-width:2500px){
-                width: 96%;
-                }  
                 /*---------------------------------------icône chiffre*/
                 div  .icone{
                     @include centre;
                     color: #ffffff;
                     background-color: $primary_color;
                     border-radius: 22px;
-                    margin-left: -1rem;
                     /* Hauteur des icônes*/
                     height: calc(100% + 0.9);
-                    width: 3vmax;
-                    @media screen and (max-width:150px){
-                        margin-left: 0.11rem;
-                        width: 8%;
-                    }    
-                    @media screen and (max-width:241px){
-                        margin-left: -1.1rem;
-                    }    
-                    @media screen and (max-width:255px){
-                        margin-left: 2px;
-                    }    
-                    @media (min-width:320px) and (max-width:424px){
-                         margin-left: -3.7rem;
-                    }    
-                    @media (min-width:425px) and (max-width:767px){
-                        margin-left: -4.8rem;
-                    }    
-                    @media screen and (min-width:768px){
-                        width: 4vmin;
-                        height: 4vmin;
-                    }  
-                    @media screen and (min-width:1235px){
-                        font-size: 2.5vmax;
-                        height: 100%;
-                        width: 3vmax;
-                    }  
-                    @media screen and (min-width:2500px){
-                        margin-left: -6rem;
-                        font-size: 2vmax;
-                        height: 100%;
-                        width: 3vmax;
-                    }             
+                    width: 2.5vmax;
+                    margin-left: -3rem;
+                    margin-right: 2rem;
+                    @media screen and (min-width:377px) {
+                        margin-left: 0rem;
+                    }
+                    @media screen and (max-width:376px) {
+                        margin-left: -5rem;
+                    }
+                    @media screen and (max-width:374px) {
+                        margin-left: -0.5rem;
+                    }
+                    @media screen and (max-width:300px) {
+                        margin-left: -0.5rem;
+                    }
+                    @media screen and (max-width:200px) {
+                        margin-right: 0rem;
+                    }
+                    
+                   
+                  
+
+                    
                 }
                 /*--------------------------------filtres largeur  texte*/
                 div .filtre{
-                    width:15rem;
-                    @include espacer;
-                    position: relative;
+                    display: flex;
+                    align-items: center;
                     font-family: 'Roboto';
                     font-weight: bolder;
-                    @media (max-width:150px) {
-                    width: 12rem;
-                    justify-content: start;
-                    margin-left: 2rem;
+                    font-size: 2vmax;
+                    @media screen and (max-width:144px) {
+                        font-size: 1.2vmax;
                     }
-                    @media (min-width:200px) {
-                        width:30vmax;
-                    }
-                    @media (max-width:261px) {
-                        font-size: 10px;
-                        width: 9rem;
-                    }
-                    @media (min-width:262px) and (max-width:374px){
-                        font-size: 10px;
-                    }
-                    @media screen and (min-width:375px) {
-                        width: 14.6rem;   
-                    }
-                    @media screen and (min-width:384px) {
-                        width: 15rem; 
-                    }
-                    @media screen and (min-width:768px) {
-                        width: 44vmax;
-                        font-size: 2vmin;  
-                    }
-                    @media screen and (min-width:999px) {
-                        width: 24vmax;
-                        font-size: 2vmin;  
-                    }
-                    @media screen and (min-width:2500px) {
-                        min-width: 20vmax;
-                        font-size: 2vmin;    
-                    }
+                   
+                   
                     /*-------------------------------------------icone smartphone...*/
                     i{
                         color: #999999;
                         font-size: 2vmax;
-                        margin-right: 2px;
-                        @media screen and (max-width:150px){
-                            margin-left: 0.2rem;
-                        } 
-                        @media screen and (min-width:768px) {
-                            font-size: 2vmin;
-                            @include verticale; 
-                        }
-                        @media screen and (min-width:1235px) {
-                            font-size: 1.5vmax;
-                            @include verticale;     
-                        }
-                        @media screen and (min-width:2560px) {
-                            font-size: 1.5vmax;   
-                        }
+                        height: 100%;
                         &:hover{
                             color: $primary_color;
                         } 
+                        @media screen and (min-width:1440px) {
+                            font-size: 1.5vmax;
+                        }
                     }
                 }
                 p{
@@ -306,27 +257,14 @@ body{
 }
 .filtre{
     @include espacer;
-    @media screen and (max-width:150px) {
-        width: 3px;
-    }
-    @media (min-width:200px) and (max-width:373px) {
-        width: 7vmin;  
-    }
-    @media screen and (min-width:2500px) {
-        width: 3vmax;
-    }
+    
+
     /*span*/
     span{
-        display: flex;
-        @media screen and (max-width:150px) {
-            font-size: 1.5vmax;
-            width: 20%;
-        }
-        @media screen and (min-width:1235px) {
-            font-size: 1.5vmax;
-        }
-        @media screen and (min-width:2500px) {
-            font-size: 1.5vmax;
+        margin-left: 2rem;
+        @include verticale; 
+        @media screen and (max-width:144px) {
+            margin-left: 0.2rem;
         }
     }
 }
@@ -527,7 +465,7 @@ header{
     background-color: $background_color_container1;
     display: flex;
     flex-direction: column;
-    width: 100%;
+
     position: relative;
     @media screen and (min-width:700px){
        @include centre;
@@ -535,34 +473,26 @@ header{
     /*----------------------------------------------------------------------------Centrer les menus*/
     .position_menus{
         margin-bottom: 10%;
-        @media screen and (min-width:707px){
-            width: 42rem;
-        }
-        @media screen and (min-width:741px){
-            width: 44rem;
-        }
-        @media screen and (min-width:960px){
-            width: 55rem;
-        }
-        @media screen and (min-width:1107px){
-            width: 60vmax;
-        }
-        @media screen and (min-width:1194px){
-            width: 74rem;
-        }
-        @media screen and (min-width:1283px){
-            max-width: 80vmax;
-            display: flex;
-            flex-direction: row;
-        }
-        @media screen and (min-width:1463px){
-            width: 91vmax;
-        }
-        @media screen and (min-width:2500px){
-            min-width: 91vmax;
+        
+      
+        
+    }
+    /*-------------------------------coeur*/
+    .title{
+        i{
+            @media screen and (max-width:264px){
+                font-size: 10vmin;
+            }
         }
     }
     /*-------------------------------------------------------------------------titre des menus*/
+    h2{
+        font-size: 4vmax;
+        @media screen and (max-width:264px){
+            font-size: 10vmin;
+        }
+
+    }
     @include h3;
     /*-------------------------------------------------------titre :entrées, plats, dessert*/
     h3{
@@ -590,51 +520,19 @@ header{
         justify-content: space-between;
         background-color: white;
         border: none;
-        padding:  6px 0px 0px 10px;
         margin: 10px;
-        border-radius: 15px;
+        border-radius: 10px;
         box-shadow: -1px 2px 10px #0000002e;
         position: relative;
         overflow: hidden;
-        @media (min-width: 150px) and (max-width: 175px){
-            width: 17vmax;
-        }
-        @media (min-width: 176px) and (max-width: 190px){
-            width: 20vmax;
-        }
-        @media (min-width: 324px) and (max-width: 597px){
-            width: 88vmin;
-        }
-        @media (min-width: 598px) and (max-width: 650px){
-            width: 90vmin;
-        }
-        @media (min-width: 651px) and (max-width: 720px){
-            width: 78vmax;
-        }
-        @media (min-width: 820px) and (max-width: 1194px){
-            max-width: 85vmax;
-        }
+
+
         
-        @media (min-width: 1195px) and (max-width: 1283px){
-            width:80vmax;
-        }
-        @media screen and (min-width:1284px){
-            max-width: 24.5vmax;
-        }
-        @media screen and (min-width:1463px){
-            width: 27.5vmax;
-        }
-        @media screen and (min-width:2560px){
-            margin: 1vmax;
-            min-width: 27.5vmax;
-            
-        }
+       
     }
     .nom_plat{
-        width: 80%;
-        @media screen and (min-width:2560px){
-            padding: 1.5vmax;
-        }
+        
+        padding: 1.5vmax;
     }
     /*--------------------------------------------------au survol*/
     .container_menu:hover .check {
@@ -657,77 +555,20 @@ header{
     }
     /*-------------------------------------------------------prix*/
     .prix{
-        @media screen and (max-width:164px){
-            font-size: 0.5vmax;
-        }
-        @media screen and (max-width:205px){
-            font-size: 0.8vmax;
-        }
-        @media screen and (min-width:319px){
-            font-size: 1.9vmax;
-        }
-        @media screen and (min-width:375px){
-            font-size: 1.6vmax;
-        }
-        @media screen and (min-width:427px){
-            font-size: 1.5vmax;
-        }
-        @media screen and (min-width:768px){
-            font-size: 1.9vmax;
-        }
-        @media screen and (min-width:800px){
-            font-size:1.9vmax;
+        font-size: 3vmin;
+        font-weight: bold;
+        margin: 0;
+        @media screen and (min-width:1024px){
+            font-size: 1.2vmax;
         }
         
-        @media screen and (min-width:1027px){
-            font-size:1.2vmax;
-        }
     }
     .container_menu:hover .prix {
-        transform: translate(-56px);
-        @media screen and (max-width:121px){
-            font-size:0.1px;
-       }
-        @media screen and (max-width:164px){
-            font-size: 0.5vmax;
-            transform: translate(-50px);
-        }
-        @media screen and (max-width:205px){
-            font-size: 1.1vmax;
-            transform: translate(-3.5rem);
-        }
-        @media (min-width: 206px) and (max-width: 498px){
-            transform: translate(-3.5rem);
-        }
-        @media (min-width: 499px) and (max-width: 511px){
-            transform: translate(-6rem);
-        }
-        @media (min-width: 512px) and (max-width: 757px){
-            transform: translate(-9vmax);
-        }
-        @media screen and (min-width:758px){
-            transform: translate(-10vmax);
-        }
-        @media screen and (min-width:800px){
-            font-size:1.9vmax;
-        }
-        @media screen and (min-width:1027px){
-            font-size:1.2vmax;
-        }
-       
+        
+        transform: translate(-10vmax); 
+        
     }
-    p {
-        font-size: 3vmin;
-        /* Nécessaires pour text-overflow */
-        white-space: nowrap;
-        overflow: hidden;
-        @media screen and (max-width:189px){
-            font-size: 4vmin;
-        }
-        @media screen and (min-width:1440px){
-            font-size: 2.1vmin;
-        }
-    }
+
     /*-----------------------------------------------------------------nom entrée plat dessert*/
     h4.menu{
         white-space: nowrap;
@@ -735,116 +576,50 @@ header{
         margin: 0px;
         font-family: 'Roboto';
         font-size: 4vmin;
-        min-width: 190px;
-        @media  screen and (max-width:279px) {
-            @include ellipsis;
-            width: 5px;
+        @media screen and (min-width:1024px){
+            font-size: 1.2vmax;
         }
-        @media  screen and (min-width:280px) {
-            min-width: 200px;
-            
-        }
-        @media  screen and (min-width:476px) {
-            min-width: 200px;
-            font-size: 2.5vmin;
-        }
-        @media screen and (min-width:1194px){
-            min-width: 22rem;
-            font-size: 2.5vmin;
-        }
-    
-        @media screen and (min-width:1283px){
-            min-width: 22rem;
-            font-size: 1vmax;
-        }
-        @media screen and (min-width:1440px){
-            min-width: 22rem;
-
-        }
+   
+        
     }
     .container_menu:hover h4.menu {
         @include ellipsis;
-        width: 3px;
-        @media screen and (max-width:320px){
-            min-width: 50px;
-            @include ellipsis;
+        width: 10vmax;
+        @media (min-width:375px) and (max-width:376px){
+            width: 25vmax;
         }
-        @media screen and (min-width:1283px){
-            min-width: 8vmax;
-            @include ellipsis;
-        }
+ 
+       
     }
     .description_prix{
         display: flex;
         justify-content: flex-end;
         align-items: end;
         font-family: 'Roboto';
-        width: 100%;
+
         margin-right: 2%;
-        @media  screen and (max-width:268px) {
-            margin-right: 6%;
-        }
-        @media  screen and (min-width:1440px) {
-            width: 20%;
-        }
-        @media screen and (min-width:2560px){
-            padding: 1.5vmax;
-        }
+
+        padding: 1.5vmax;
     }
 
     /*---------------------------------------------détail entrée plat dessert*/
     .overflow-ellipsis{
-        @media screen and (max-width:120px){
-            min-width: 20px;
-            @include ellipsis;
-        }
-        @media screen and (max-width:320px){
-            min-width: 50px;
-            @include ellipsis;
-        }
-        @media  (min-width:320px) and (max-width: 374px){
-            font-size: 1.9vmax;
-        }
-        @media (min-width: 375px) and (max-width: 424px){
-            font-size: 1.6vmax;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-top: 2px;
+        margin: 0;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 3vmin;
+        @media screen and (min-width:1024px){
+            font-size: 1vmax;
         }
         
-        @media screen and (min-width:427px){
-            font-size: 1.9vmax;
-        }
-        @media screen and (min-width:1283px){
-            font-size: 0.8vmax;
-        }
-        @media screen and (min-width:1440px){
-            font-size: 1.2vmax;
-            @include ellipsis;;
-        }
     }
     .container_menu:hover .overflow-ellipsis {
         @include ellipsis;
-        
-        @media screen and (max-width:164px){
-            @include ellipsis;
-            width: 10vmin;
-        }
-        @media screen and (min-width:165px){
-            width: 40vmin;
-            @include ellipsis;
-        }
-        @media screen and (min-width:1283px){
-            width: 10vmin;
-            @include ellipsis;
-        }
-        @media screen and (min-width:1317px){
-            width: 10vmin;
-            font-size:0.8vmax;
-            @include ellipsis;
-        }
-        @media screen and (min-width:1440px){
-            font-size: 1.2vmax;
-            @include ellipsis;
-        }
-        
+        max-width: 5vmax;
+
     }
     /*------------------------------------------fond vert animation*/
     .check{
@@ -855,8 +630,8 @@ header{
         color: white;
         min-width: 50px;
         height: 100%;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         @include centre;
         padding-top:1.4px;
         opacity: 0;
@@ -884,7 +659,7 @@ ul{
 }
 @include footer;
 li{
-    width: 100%;
+
     list-style: none;
     a{
         color: $link_visited;
@@ -898,25 +673,11 @@ li{
         font-family: 'Roboto';
         font-weight: 10;
         margin: 2px;
-     
-     
-        @media screen and (max-width:374px){
-            font-size: 3vmax;
-            width: 100vmin;
-        }
+        font-size: 1.3vmax;
         @media screen and (min-width:375px){
             font-size: 3vmax;
             width: 100vmin;
-        }
-        @media screen and (min-width:952px){
-            width: 50vmax;
-        }
-        @media screen and (min-width:2500px){
-            margin-bottom: 3rem;
-        }
-        @media screen and (min-width:5000px){
-            margin: 8rem;
-        }
+        }  
     }
     #i_footer{
         padding-right: 0.6rem;
