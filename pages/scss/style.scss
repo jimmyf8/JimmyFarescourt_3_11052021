@@ -16,15 +16,10 @@
 /**************************************
 HOME, PAGE  2,3,4,5 
 ***************************************/
-
 body{
     /*-------------------------------------------------loader*/
     @include loader;
     height: 100vh;
-    width: 100%;
-
-    
-   
     /*-------------------------------------------------logo*/
     .logo{
         @include centre; 
@@ -43,25 +38,25 @@ body{
             color: black;
             font-family: "Shrikhand"; 
             @media screen and (max-width:280px){
-           
                 font-size: 1vmax;
             } 
             @media screen and (min-width:320px){
                 font-size: 2vmax;
-                
+            } 
+            @media screen and (min-width:500px){
+                font-size: 0.7vmax;
             } 
             @media screen and (min-width:768px){
-                font-size: 3vmax;
+                font-size: 1vmax;
                 height: 10vmax;
             } 
             @media screen and (min-width:1024px){
-                font-size: 2vmax;
+                font-size: 1.5vmax;
                 height: 10vmax;
             } 
-            @media screen and (min-width:2560px){
+            @media screen and (min-width:3500px){
                 height: 20vmax;
-                font-size: 4vmax;
-                
+                font-size: 4vmax;  
             } 
         }    
     h1{
@@ -88,7 +83,6 @@ body{
 /*********************************************************************************************************************************
 ----------------------------------------------------------------------------HOME--------------------------------------------------
 **********************************************************************************************************************************/ 
-    
 
 /*-----------------------------------block recherche accueil*/
 .recherche-filtres{
@@ -101,7 +95,7 @@ body{
 @include search; 
 /*------------------------------------------------*recherche-slogan-boutton*/
 .containers{
-    @media screen and (min-width:1000px){
+    @media screen and (min-width:2500px){
         display: flex;
         flex-direction: row-reverse;
         flex: 1;
@@ -124,7 +118,7 @@ body{
     @media screen and (min-width:1000px){
         @include centre; 
         flex-direction: column;
-        flex: 2;
+        flex: 1;
 
     }
     @media screen and (min-width:1440px){
@@ -163,14 +157,15 @@ body{
     .filtres{   
         max-width: 15500px;
         ul {  
-            @include horizontale;
+            display: flex;
+            justify-content: center;
             padding-left:0px;
             flex-direction: column;
             
             li{ 
                 animation: slideDown 5s;
                 @include centre; 
-                width: 90%;
+                width: 93%;
                 height: 10vmax;
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                 border: none;
@@ -182,10 +177,7 @@ body{
                 &:hover{
                 box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);
                 background-color: rgb(247, 222, 247);
-                display: flex;
-                align-items: center;
 
-                
                 }
                 /*---------------------------------------icône chiffre*/
                 div  .icone{
@@ -202,7 +194,7 @@ body{
                         margin-left: 0rem;
                     }
                     @media screen and (max-width:376px) {
-                        margin-left: -5rem;
+                        margin-left: -5.2rem;
                     }
                     @media screen and (max-width:374px) {
                         margin-left: -0.5rem;
@@ -212,12 +204,7 @@ body{
                     }
                     @media screen and (max-width:200px) {
                         margin-right: 0rem;
-                    }
-                    
-                   
-                  
-
-                    
+                    }    
                 }
                 /*--------------------------------filtres largeur  texte*/
                 div .filtre{
@@ -229,8 +216,6 @@ body{
                     @media screen and (max-width:144px) {
                         font-size: 1.2vmax;
                     }
-                   
-                   
                     /*-------------------------------------------icone smartphone...*/
                     i{
                         color: #999999;
@@ -465,17 +450,14 @@ header{
     background-color: $background_color_container1;
     display: flex;
     flex-direction: column;
-
     position: relative;
-    @media screen and (min-width:700px){
-       @include centre;
-    }
+   
+  
     /*----------------------------------------------------------------------------Centrer les menus*/
     .position_menus{
         margin-bottom: 10%;
         
-      
-        
+
     }
     /*-------------------------------coeur*/
     .title{
@@ -490,6 +472,9 @@ header{
         font-size: 4vmax;
         @media screen and (max-width:264px){
             font-size: 10vmin;
+        }
+        @media screen and (min-width:768px){
+            font-size: 3vmax;
         }
 
     }
@@ -524,11 +509,7 @@ header{
         border-radius: 10px;
         box-shadow: -1px 2px 10px #0000002e;
         position: relative;
-        overflow: hidden;
-
-
-        
-       
+        overflow: hidden;  
     }
     .nom_plat{
         
